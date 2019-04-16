@@ -52,11 +52,11 @@ h2:before{
     padding-right: 5px;
 }
 
-#about{
+section:first-child{
     flex: 2;
 }
 
-#services{
+section:last-child{
     flex: 3;
     margin-left: 20px;
 }
@@ -67,8 +67,46 @@ h2:before{
     margin: 0 20px 20px 0;
 }
 
+#contacts ul{
+    list-style: none;
+    padding: 0;
+    line-height: 1.5em;
+    color: blue;
+}
+
+#contacts li:nth-child(1):before{
+    content: "\0260F";
+    color: black;
+    padding-right: 10px;
+}
+
+#contacts li:nth-child(2):before{
+    content: "\02709";
+    color: black;
+    padding-right: 10px;
+}
+
+#contacts li:nth-child(3):before{
+    content: "\02656";
+    color: black;
+    padding-right: 10px;
+}
+
+#contacts input:not(.btn), #contacts textarea{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#map img{
+    width: 100%;
+}
+
 .btn{
     display: inline-block;
+    border: 0;
     background-color: #b8cb21;
     color: white;
     padding: 15px;
