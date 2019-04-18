@@ -1,0 +1,154 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-wrapper{
+    background-color: #DBDEE5;
+}
+
+header, main, .title-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    max-height: 45px;
+    width: auto;
+    padding: 5px 0;
+}
+
+nav a{
+    color: #F85059;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:last-child{
+    margin-right: 0;
+}
+
+nav a:hover{
+    color: #F30B16;
+    text-decoration: underline;
+}
+
+#slideshow{
+    height: 60vh; /* vh is relative to 1% of the height of the viewport (i.e. height of the screen) */
+}
+
+#slideshow img{
+    max-height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#slideshow .title-wrapper{
+    position: relative;
+}
+
+#slideshow .title{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(243,11,22, 0.5);
+    padding: 10px;
+}
+
+section:not(#slideshow){
+    padding: 10px 0;
+}
+
+h2{
+    color: #F85059;
+}
+
+h2 .darker{
+    color: #F30B16;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product{
+    background-color: #F3F6F8;
+    border: 1px solid #DBDEE5;
+    padding: 10px;
+    box-sizing: border-box;
+    width: calc(25% - 10px/4*3);
+    text-align: center;
+}
+
+.product img{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.product .title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product .title:before{
+    content: "\2666";
+    padding-right: 10px;
+}
+
+.product .description{
+    text-align: justify;
+    color: #444;
+    font-size: 0.9em;
+}
+
+#contacts .content-wrapper > form, #contacts .content-wrapper > div{
+    width: calc(50% - 10px/2);
+}
+
+form input, textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    max-width: 100%;
+    min-height: 100px;
+}
+
+form input[type=submit]{
+    width: 30%;
+    padding: 10px 0;
+    margin-bottom: 0;
+    background: none;
+    border: 1px solid #F30B16;
+}
+
+form input[type=submit]:hover{
+    border: none;
+    background: #F30B16;
+	color: #fff;
+}
+
+.map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #DBDEE5;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
