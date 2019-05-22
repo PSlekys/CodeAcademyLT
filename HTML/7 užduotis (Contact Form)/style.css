@@ -1,0 +1,43 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1553152531-b98a2fc8d3bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3289&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: #eee;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+
+input, textarea{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border-bottom: 1px solid aqua;
+}
+
+input[type=submit]{
+    background-color: #333;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    position: relative;
+}

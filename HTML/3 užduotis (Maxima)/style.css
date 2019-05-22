@@ -1,0 +1,90 @@
+body{
+    background-color: #ebebeb;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header, section{
+    background: #F9F9F9;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+header{
+    text-align: center;
+}
+
+header img{
+    max-width: 250px;
+}
+
+header ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    display: inline;
+    margin-right: 20px;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+header li a{
+    color: black;
+    text-decoration: none;
+}
+
+header li a:hover{
+    text-decoration: underline;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+#apie p{
+    text-align: justify;
+}
+
+.product{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.product .price-tag{
+    font-weight: normal;
+}
+
+.map img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+footer{
+    text-align: center;
+    color: #555;
+    padding: 15px;
+}

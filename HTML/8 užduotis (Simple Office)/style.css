@@ -1,0 +1,124 @@
+body{
+    background-image: url('./bg.png');
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background-color: #b8cb21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo img{
+    height: 65px;
+}
+
+nav a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #3b4205;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+nav a:last-child{
+    margin-right: 0;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    text-align: right;
+}
+
+main section :not(a){
+    text-align: justify;
+}
+
+h2:before{
+    content: "\269d";
+    padding-right: 5px;
+}
+
+section:first-child{
+    flex: 2;
+}
+
+section:last-child{
+    flex: 3;
+    margin-left: 20px;
+}
+
+#services img{
+    max-width: 50%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+#contacts ul{
+    list-style: none;
+    padding: 0;
+    line-height: 1.5em;
+    color: blue;
+}
+
+#contacts li:nth-child(1):before{
+    content: "\0260F";
+    color: black;
+    padding-right: 10px;
+}
+
+#contacts li:nth-child(2):before{
+    content: "\02709";
+    color: black;
+    padding-right: 10px;
+}
+
+#contacts li:nth-child(3):before{
+    content: "\02656";
+    color: black;
+    padding-right: 10px;
+}
+
+#contacts input:not(.btn), #contacts textarea{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#map img{
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    border: 0;
+    background-color: #b8cb21;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    text-decoration: underline;
+}
+
+footer{
+    color: #3b4205;
+    text-align: center;
+    padding: 10px 0;
+}

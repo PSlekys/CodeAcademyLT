@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        table, td, th{
+            border: 1px solid black;
+        }
+        td, th{
+            padding: 10px;
+        }
+
+        tr:hover{
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        tr:first-child{
+            background-color: rgba(0,0,0,0.6);
+        }
+    
+    </style>    
+</head>
+<body>
+    <h1>Used Car DB</h1>
+    <table id="cars">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Brand
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                No. Doors
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+    </table>
+
+    <div class="addcar">
+        <h2>Add a car</h2>
+        Brand
+        <input type="text" id="brand"/><br/>
+        Model
+        <input type="text" id="model"/><br/>
+        Doors
+        <input type="number" id="doors"/><br/>
+        Price
+        <input type="number" id="price"/><br/>
+        <input type="submit" onclick="addCar()"/>
+    </div>
+
+    <div class="deletecar">
+        <h2>Remove a car</h2>
+        ID
+        <input type="number" id="did"/>
+        <input type="submit" onclick="removeCar()"/>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
