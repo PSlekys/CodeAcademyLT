@@ -1,0 +1,30 @@
+header{
+    background-color: #eee;
+}
+
+main{
+    /*background-color: #222;*/
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#app, #input{
+    padding: 20px;
+}
+
+table, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding: 5px;
+}
