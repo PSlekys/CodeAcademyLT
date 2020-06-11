@@ -1,0 +1,63 @@
+body {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Aachener_Wald_-_geo.hlipp.de_-_5415.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background: grey;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  height: 40px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  border-radius: 5px;
+  margin: 10px;
+  min-height: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.large {
+  width: calc(50% - 20px);
+}
+
+.small {
+  width: calc(25% - 20px);
+}
